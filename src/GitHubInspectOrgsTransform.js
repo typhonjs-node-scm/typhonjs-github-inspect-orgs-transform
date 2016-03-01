@@ -6,10 +6,22 @@ import gulptasks        from './gulp/gulptasks.js';
 
 /**
  * GitHubInspectOrgsTransform - Provides various transform functions to convert the normalized data returned by all
- * GitHubInspectOrgs queries. By default the following transform types are available: `html`, `json`, `markdown` and
- * `text`. All functions transforms output data from a query as a string, but user supplied transforms may output any
- * type of data. Each function may also take an optional parameter `pipeFunction` which is invoked with the transformed
- * data. The transformed results are added to the original data returned by a given query with a new key `transformed`.
+ * GitHubInspectOrgs queries from
+ * [typhonjs-github-inspect-orgs](https://www.npmjs.com/package/typhonjs-github-inspect-orgs). The API mirrors
+ * `typhonjs-github-inspect-orgs` and requires an instance injected into the constructor of
+ * `GitHubInspectOrgsTransform`.
+ *
+ * By default the following transform types are available: `html`, `json`, `markdown` and `text` and initially set in
+ * an options hash with a required `transformType` entry passed into the constructor as the second parameter. All
+ * functions transform normalized output data from a `GitHubInspectOrgs` query as a string, but user supplied transforms
+ * may output any type of data. Each function forwards on any options supported by `typhonjs-github-inspect-orgs` and
+ * may also take optional parameters `description` to provide expanded descriptive output in addition to a
+ * `pipeFunction` function entry which is invoked immediately with the resulting transformed data. The transformed
+ * results are added to the original data returned by a given query with a new key `transformed` and returned as a
+ * Promise.
+ *
+ * `GitHubInspectOrgsTransform` excels at creating indexes in several popular formats for a many-organization / repo
+ * effort such as TyphonJS and beyond.
  */
 export default class GitHubInspectOrgsTransform
 {
@@ -39,6 +51,8 @@ export default class GitHubInspectOrgsTransform
     *
     * (function)  pipeFunction - A function that is used any defined Gulp tasks when invoking `GitHubInspectOrgs` query
     *                            functions; default (console.log).
+    *
+    * (boolean)   skipNonCredentialTasks - If true then skip all tasks that don't require credentials.
     *
     * (Array<String>)   categories - Required list of stats categories to query. May include:
     *    'all': A wildcard that includes all categories defined below.
