@@ -1,0 +1,11 @@
+[test-org-typhonjs](https://github.com/test-org-typhonjs) - Just a test organization for testing typhonjs-github-inspect-orgs
+
+   - [test-repo1](https://github.com/test-org-typhonjs/test-repo1) - Just a test repo
+   - [test-repo2](https://github.com/test-org-typhonjs/test-repo2) - Just a test repo
+
+[test-org-typhonjs2](https://github.com/test-org-typhonjs2) - Just a test organization for testing typhonjs-github-inspect-orgs
+
+   - [test-repo-blah](https://github.com/test-org-typhonjs2/test-repo-blah) - Just a test repo
+   - [test-repo-blah2](https://github.com/test-org-typhonjs2/test-repo-blah2) - Just a test repo
+      * [typhonjs-test](https://github.com/typhonjs-test)
+

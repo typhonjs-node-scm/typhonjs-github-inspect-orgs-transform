@@ -1,0 +1,8 @@
+test-org-typhonjs - Just a test organization for testing typhonjs-github-inspect-orgs
+   cool-test-team - A test team description!
+   cool-test-team2 - A test team description!
+
+test-org-typhonjs2 - Just a test organization for testing typhonjs-github-inspect-orgs
+   super-test-team - A test team description!
+   super-test-team2 - A test team description!
+

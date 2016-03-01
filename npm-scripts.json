@@ -1,0 +1,28 @@
+/**
+ * You can provide comments in `npm-scripts.json`
+ */
+{
+   "build":
+   {
+      "babel": { "source": "src", "destination": "dist" }
+   },
+
+   "publish":
+   {
+      "prepublish": { "scripts": [ "gulp eslint", "npm run test", "npm run build" ] }
+   },
+
+   "test":
+   {
+      // Provides a `coverage` handling command that is appended when running on Travis CI.
+      "travis":
+      {
+         "coverage": "&& cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js",
+         "istanbul": { "command": "cover", "options": [ "-x 'gulptasks.js'", "--report lcovonly" ] }
+      },
+
+      // For local coverage results output a full report.
+      "istanbul": { "command": "cover", "options": [ "-x 'gulptasks.js'" ] },
+      "mocha": { "source": "./test/src", "options": [ "--compilers js:babel-register", "-t 120000 --recursive" ] }
+   }
+}

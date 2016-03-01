@@ -1,0 +1,8 @@
+test-org-typhonjs - Just a test organization for testing typhonjs-github-inspect-orgs
+   typhonjs-test - https://github.com/typhonjs-test
+   typhonjs-test2 - https://github.com/typhonjs-test2
+
+test-org-typhonjs2 - Just a test organization for testing typhonjs-github-inspect-orgs
+   typhonjs-test - https://github.com/typhonjs-test
+   typhonjs-test2 - https://github.com/typhonjs-test2
+

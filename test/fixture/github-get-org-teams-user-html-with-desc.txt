@@ -1,0 +1,12 @@
+<ul id="orgs">
+   <li><a href="https://github.com/test-org-typhonjs" target="_blank">test-org-typhonjs</a> - Just a test organization for testing typhonjs-github-inspect-orgs
+   <ul id="teams">
+      <li>cool-test-team2 - A test team description!</li>
+   </ul>
+   </li>
+   <li class="li-depth-0"><a href="https://github.com/test-org-typhonjs2" target="_blank">test-org-typhonjs2</a> - Just a test organization for testing typhonjs-github-inspect-orgs
+   <ul id="teams">
+      <li>super-test-team2 - A test team description!</li>
+   </ul>
+   </li>
+</ul>

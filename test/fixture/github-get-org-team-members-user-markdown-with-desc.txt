@@ -1,0 +1,12 @@
+[test-org-typhonjs](https://github.com/test-org-typhonjs) - Just a test organization for testing typhonjs-github-inspect-orgs
+
+   - cool-test-team2 - A test team description!
+      * [typhonjs-test](https://github.com/typhonjs-test)
+      * [typhonjs-test2](https://github.com/typhonjs-test2)
+
+[test-org-typhonjs2](https://github.com/test-org-typhonjs2) - Just a test organization for testing typhonjs-github-inspect-orgs
+
+   - super-test-team2 - A test team description!
+      * [typhonjs-test](https://github.com/typhonjs-test)
+      * [typhonjs-test2](https://github.com/typhonjs-test2)
+
