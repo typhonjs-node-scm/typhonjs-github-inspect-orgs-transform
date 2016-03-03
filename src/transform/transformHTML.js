@@ -99,6 +99,7 @@ const s_TRANSFORM_FIRST_PASS = (category, entry, depth, options = {}) =>
       case 'contributors':
       case 'members':
       case 'owners':
+      case 'users':
          resultString += `${entry.url !== '' ? `<a href="${entry.url}" target="_blank">${entry.name}</a>` :
           entry.name}${tail}`;
          break;

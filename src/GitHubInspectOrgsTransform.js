@@ -764,4 +764,49 @@ export default class GitHubInspectOrgsTransform
    {
       return this._transformControl;
    }
+
+
+   /**
+    * Transforms all normalized data from `getUserFromCredential` based on the `credential` entry in the `options` hash
+    * returning the original query data including the transformed results under an added key `transformed`. In addition
+    * if an optional function, `pipeFunction`, is supplied it is invoked with the transformed results.
+    *
+    * @param {object}   options - Optional parameters:
+    * ```
+    * optional:
+    * (boolean)   description - Add additional description info for all entries where available; default (false).
+    *
+    * (function)  pipeFunction - A function that will be invoked with a single parameter with the transformed result.
+    * ```
+    *
+    * @returns {Promise}
+    */
+   getUserFromCredential(options = {})
+   {
+      if (typeof options !== 'object')
+      {
+         throw new TypeError(`getUserFromCredential error: 'options' is not an 'object'.`);
+      }
+
+      options.description = options.description || false;
+      options.pipeFunction = options.pipeFunction || undefined;
+
+      if (options.pipeFunction && typeof options.pipeFunction !== 'function')
+      {
+         throw new TypeError(`getUserFromCredential error: 'options.pipeFunction' is not a 'function'.`);
+      }
+
+      return this._githubInspect.getUserFromCredential(options).then((data) =>
+      {
+         const result = this._transformControl.transform(data.normalized, options);
+
+         // If a pipeFunction function is optionally supplied then pipe `result`.
+         if (options.pipeFunction) { options.pipeFunction.call(null, result); }
+
+         // Add transformed result under a `transformed` key with the original query data.
+         data.transformed = result;
+
+         return data;
+      });
+   }
 }

@@ -56,6 +56,7 @@ const s_TRANSFORM = (category, entry, depth, options) =>
       case 'contributors':
       case 'members':
       case 'owners':
+      case 'users':
          if (depth > 0 && lastEntry && maxDepth) { tail += '\n'; }
          if (desc) { resultString += `${entry.name}${entry.url !== '' ? ` - ${entry.url}` : ''}${tail}`; }
          else { resultString += `${entry.name}${tail}`; }

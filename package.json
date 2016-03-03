@@ -1,6 +1,6 @@
 {
   "name": "typhonjs-github-inspect-orgs-transform",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/",
   "description": "A NPM module transforming compound GitHub queries for many-repo projects from typhonjs-github-inspect-orgs to HTML, JSON, Markdown or text.",
   "license": "MPL-2.0",
@@ -18,13 +18,13 @@
     }
   ],
   "dependencies": {
-    "typhonjs-github-inspect-orgs": "^0.0.5"
+    "typhonjs-github-inspect-orgs": "^0.0.7"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "typhonjs-config-eslint": "^0.3.0",
     "typhonjs-core-gulptasks": "^0.5.0",
-    "typhonjs-npm-build-test": "^0.0.8"
+    "typhonjs-npm-build-test": "^0.0.9"
   },
   "scripts": {
     "build": "babel-node ./node_modules/typhonjs-npm-scripts-build-babel/scripts/build.js",

@@ -261,5 +261,13 @@ export default function(inspectTransform, options)
       {
          return inspectTransform.getOrgs({ credential, description, pipeFunction });
       });
+
+      /**
+       * Transforms normalized `getUserFromCredential` with user credentials.
+       */
+      gulp.task('github-get-user-from-credential', () =>
+      {
+         return inspectTransform.getUserFromCredential({ credential, description, pipeFunction });
+      });
    }
 }

@@ -605,18 +605,41 @@ describe('GitHubInspectOrgsTransform', () =>
          s_DATA_TEST(data.normalized, transformControl, 'github-get-owners-rate-limit');
       });
    });
+
+   /**
+    * Test `getUserFromCredential`.
+    */
+   it('getUserFromCredential', () =>
+   {
+      return inspectTransform.getUserFromCredential({ credential: userCredential }).then((data) =>
+      {
+         assert(typeof data === 'object');
+         assert(typeof data.normalized === 'object');
+         assert(typeof data.raw === 'object');
+         assert(typeof data.transformed === 'string');
+
+         // Delete any variable data.
+         s_STRIP_VARIABLE_DATA(data.normalized);
+
+         // Only enabled when generating test data.
+         s_DATA_WRITE(data.normalized, transformControl, 'github-get-user-from-credential');
+
+         // Usually data is being tested.
+         s_DATA_TEST(data.normalized, transformControl, 'github-get-user-from-credential');
+      });
+   });
 });
 
 // Module private ---------------------------------------------------------------------------------------------------
 
 /**
- * Always true enabling testing of data in `./test/fixture`.
+ * Always true; enabling testing of data in `./test/fixture`.
  * @type {boolean}
  */
 const s_TEST_DATA = true;
 
 /**
- * Usually false; when testing data is written to `./test/fixture`.
+ * Usually false; generates test data written to `./test/fixture`.
  * @type {boolean}
  */
 const s_WRITE_DATA = false;
