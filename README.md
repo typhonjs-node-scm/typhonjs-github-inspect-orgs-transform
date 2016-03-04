@@ -9,7 +9,7 @@
 [![Coverage](https://img.shields.io/codecov/c/github/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform.svg)](https://codecov.io/github/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform)
 [![Dependency Status](https://www.versioneye.com/user/projects/56d5f636d71695003e63077b/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56d5f636d71695003e63077b)
 
-Provides a NPM module that transforms data from typhonjs-github-inspect-orgs to normalized HTML, markdown, JSON or text by piping to console or a provided function. A set of Gulp tasks are also available for testing / example integration. 
+Provides a NPM module that transforms data from typhonjs-github-inspect-orgs to normalized HTML, markdown, JSON or text by piping to console or a provided function. 
 
 GitHubInspectOrgsTransform - Provides various transform functions to convert the normalized data returned by all
 GitHubInspectOrgs queries from
