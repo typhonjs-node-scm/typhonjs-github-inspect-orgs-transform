@@ -47,11 +47,6 @@ export default class GitHubInspectOrgsTransform
 
       if (typeof options !== 'object') { throw new TypeError(`initialize error: 'options' is not an 'object'.`); }
 
-      if (typeof optionsGulp !== 'object')
-      {
-         throw new TypeError(`initialize error: 'optionsGulp' is not an 'object'.`);
-      }
-
       /**
        * The associated GitHubInspectOrgs instance.
        * @type {Object}
