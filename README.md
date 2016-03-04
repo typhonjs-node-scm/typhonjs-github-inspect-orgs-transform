@@ -76,4 +76,379 @@ GitHubInspectOrgsTransform method summary:
 - [getUserFromCredential](#getUserFromCredential) - Returns the GitHub user who owns the provided credential.
 
 -----------
+<a name="getCollaborators"></a>
+####getCollaborators
 
+Transforms all normalized data from `GitHubInspectOrgs->getCollaborators` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+@param {object}  options - Optional parameters.
+```
+(string)    credential - A public access token with `public_repo` and `read:org` permissions for any GitHub
+                         user which limits the responses to the organizations and other query data that this
+                         particular user is a member of or has access to currently.
+
+(boolean)   description - Add additional description info for all entries where available; default (false).
+
+(function)  pipeFunction - A function that will be invoked with a single parameter with the transformed result.
+
+(string)    transformType - Overrides current TransformControl transform type.
+```
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getCollaborators
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-collaborators-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getContributors"></a>
+####getContributors
+
+Transforms all normalized data from `GitHubInspectOrgs->getContributors` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+@param {object}  options - Optional parameters.
+```
+(string)    credential - A public access token with `public_repo` and `read:org` permissions for any GitHub
+                         user which limits the responses to the organizations and other query data that this
+                         particular user is a member of or has access to currently.
+
+(boolean)   description - Add additional description info for all entries where available; default (false).
+
+(function)  pipeFunction - A function that will be invoked with a single parameter with the transformed result.
+
+(string)    transformType - Overrides current TransformControl transform type.
+```
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getContributors
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-contributors-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getMembers"></a>
+####getMembers
+
+Transforms all normalized data from `GitHubInspectOrgs->getMembers` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+@param {object}  options - Optional parameters.
+```
+(string)    credential - A public access token with `public_repo` and `read:org` permissions for any GitHub
+                         user which limits the responses to the organizations and other query data that this
+                         particular user is a member of or has access to currently.
+
+(boolean)   description - Add additional description info for all entries where available; default (false).
+
+(function)  pipeFunction - A function that will be invoked with a single parameter with the transformed result.
+
+(string)    transformType - Overrides current TransformControl transform type.
+```
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getMembers
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-members-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getOrgMembers"></a>
+####getOrgMembers
+
+Transforms all normalized data from `GitHubInspectOrgs->getOrgMembers` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+@param {object}  options - Optional parameters.
+```
+(string)    credential - A public access token with `public_repo` and `read:org` permissions for any GitHub
+                         user which limits the responses to the organizations and other query data that this
+                         particular user is a member of or has access to currently.
+
+(boolean)   description - Add additional description info for all entries where available; default (false).
+
+(function)  pipeFunction - A function that will be invoked with a single parameter with the transformed result.
+
+(string)    transformType - Overrides current TransformControl transform type.
+```
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgMembers
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-org-members-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getOrgRepos"></a>
+####getOrgRepos
+
+Transforms all normalized data from `GitHubInspectOrgs->getOrgRepos` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+@param {object}  options - Optional parameters.
+```
+(string)    credential - A public access token with `public_repo` and `read:org` permissions for any GitHub
+                         user which limits the responses to the organizations and other query data that this
+                         particular user is a member of or has access to currently.
+
+(boolean)   description - Add additional description info for all entries where available; default (false).
+
+(function)  pipeFunction - A function that will be invoked with a single parameter with the transformed result.
+
+(string)    transformType - Overrides current TransformControl transform type.
+```
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgRepos
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-org-repos-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getOrgRepoCollaborators"></a>
+####getOrgRepoCollaborators
+
+Transforms all normalized data from `GitHubInspectOrgs->getOrgRepoCollaborators` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+@param {object}  options - Optional parameters.
+```
+(string)    credential - A public access token with `public_repo` and `read:org` permissions for any GitHub
+                         user which limits the responses to the organizations and other query data that this
+                         particular user is a member of or has access to currently.
+
+(boolean)   description - Add additional description info for all entries where available; default (false).
+
+(function)  pipeFunction - A function that will be invoked with a single parameter with the transformed result.
+
+(string)    transformType - Overrides current TransformControl transform type.
+```
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgRepoCollaborators
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-org-repo-collaborators-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getOrgRepoContributors"></a>
+####getOrgRepoContributors
+
+Transforms all normalized data from `GitHubInspectOrgs->getOrgRepoContributors` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+@param {object}  options - Optional parameters.
+```
+(string)    credential - A public access token with `public_repo` and `read:org` permissions for any GitHub
+                         user which limits the responses to the organizations and other query data that this
+                         particular user is a member of or has access to currently.
+
+(boolean)   description - Add additional description info for all entries where available; default (false).
+
+(function)  pipeFunction - A function that will be invoked with a single parameter with the transformed result.
+
+(string)    transformType - Overrides current TransformControl transform type.
+```
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgRepoContributors
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-org-repo-contributors-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getOrgRepoStats"></a>
+####getOrgRepoStats
+
+Transforms all normalized data from `GitHubInspectOrgs->getOrgRepoStats` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+@param {object}  options - Optional parameters.
+```
+(string)    credential - A public access token with `public_repo` and `read:org` permissions for any GitHub
+                         user which limits the responses to the organizations and other query data that this
+                         particular user is a member of or has access to currently.
+
+(boolean)   description - Add additional description info for all entries where available; default (false).
+
+(function)  pipeFunction - A function that will be invoked with a single parameter with the transformed result.
+
+(string)    transformType - Overrides current TransformControl transform type.
+```
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgRepoStats
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getOrgs"></a>
+####getOrgs
+
+Transforms all normalized data from `GitHubInspectOrgs->getOrgs` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+@param {object}  options - Optional parameters.
+```
+(string)    credential - A public access token with `public_repo` and `read:org` permissions for any GitHub
+                         user which limits the responses to the organizations and other query data that this
+                         particular user is a member of or has access to currently.
+
+(boolean)   description - Add additional description info for all entries where available; default (false).
+
+(function)  pipeFunction - A function that will be invoked with a single parameter with the transformed result.
+
+(string)    transformType - Overrides current TransformControl transform type.
+```
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgs
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-orgs-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getOrgTeams"></a>
+####getOrgTeams
+
+Transforms all normalized data from `GitHubInspectOrgs->getOrgTeams` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+@param {object}  options - Optional parameters.
+```
+(string)    credential - A public access token with `public_repo` and `read:org` permissions for any GitHub
+                         user which limits the responses to the organizations and other query data that this
+                         particular user is a member of or has access to currently.
+
+(boolean)   description - Add additional description info for all entries where available; default (false).
+
+(function)  pipeFunction - A function that will be invoked with a single parameter with the transformed result.
+
+(string)    transformType - Overrides current TransformControl transform type.
+```
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgTeams
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-org-teams-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getOrgTeamMembers"></a>
+####getOrgTeamMembers
+
+Transforms all normalized data from `GitHubInspectOrgs->getOrgTeamMembers` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+@param {object}  options - Optional parameters.
+```
+(string)    credential - A public access token with `public_repo` and `read:org` permissions for any GitHub
+                         user which limits the responses to the organizations and other query data that this
+                         particular user is a member of or has access to currently.
+
+(boolean)   description - Add additional description info for all entries where available; default (false).
+
+(function)  pipeFunction - A function that will be invoked with a single parameter with the transformed result.
+
+(string)    transformType - Overrides current TransformControl transform type.
+```
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgTeamMembers
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-org-team-members-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getOwnerOrgs"></a>
+####getOwnerOrgs
+
+Transforms all normalized data from `GitHubInspectOrgs->getOwnerOrgs` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOwnerOrgs
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-owner-orgs-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getOwnerRateLimits"></a>
+####getOwnerRateLimits
+
+Transforms all normalized data from `GitHubInspectOrgs->getOwnerRateLimits` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOwnerRateLimits
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-owners-rate-limit-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getOwners"></a>
+####getOwners
+
+Transforms all normalized data from `GitHubInspectOrgs->getOwners` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOwners
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-owners-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
+
+-----------
+<a name="getUserFromCredential"></a>
+####getUserFromCredential
+
+Transforms all normalized data from `GitHubInspectOrgs->getUserFromCredential` returning the original query data
+including the transformed results under an added key `transformed`. In addition if an optional function,
+`pipeFunction`, is supplied it is invoked immediately with the transformed results.
+
+@param {object}  options - Optional parameters.
+```
+(string)    credential - A public access token with `public_repo` and `read:org` permissions for any GitHub
+                         user which limits the responses to the organizations and other query data that this
+                         particular user is a member of or has access to currently.
+
+(boolean)   description - Add additional description info for all entries where available; default (false).
+
+(function)  pipeFunction - A function that will be invoked with a single parameter with the transformed result.
+
+(string)    transformType - Overrides current TransformControl transform type.
+```
+
+For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getUserFromCredential
+
+Please see the various permutations from tests for the transformed data requested for example output:
+- [github-get-user-from-credential-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+
+Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
