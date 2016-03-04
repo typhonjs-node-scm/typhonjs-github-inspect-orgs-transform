@@ -99,7 +99,7 @@ including the transformed results under an added key `transformed`. In addition 
 For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getCollaborators
 
 Please see the various permutations from tests for the transformed data requested for example output:
-- [github-get-collaborators-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+- [`github-get-collaborators-<MULTIPLE_VERSIONS>`](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
 
 Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
 
@@ -127,7 +127,7 @@ including the transformed results under an added key `transformed`. In addition 
 For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getContributors
 
 Please see the various permutations from tests for the transformed data requested for example output:
-- [github-get-contributors-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+- [`github-get-contributors-<MULTIPLE_VERSIONS>`](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
 
 Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
 
@@ -155,7 +155,7 @@ including the transformed results under an added key `transformed`. In addition 
 For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getMembers
 
 Please see the various permutations from tests for the transformed data requested for example output:
-- [github-get-members-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+- [`github-get-members-<MULTIPLE_VERSIONS>`](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
 
 Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
 
@@ -183,7 +183,7 @@ including the transformed results under an added key `transformed`. In addition 
 For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgMembers
 
 Please see the various permutations from tests for the transformed data requested for example output:
-- [github-get-org-members-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+- [`github-get-org-members-<MULTIPLE_VERSIONS>`](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
 
 Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
 
@@ -211,7 +211,7 @@ including the transformed results under an added key `transformed`. In addition 
 For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgRepos
 
 Please see the various permutations from tests for the transformed data requested for example output:
-- [github-get-org-repos-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+- [`github-get-org-repos-<MULTIPLE_VERSIONS>`](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
 
 Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
 
@@ -239,7 +239,7 @@ including the transformed results under an added key `transformed`. In addition 
 For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgRepoCollaborators
 
 Please see the various permutations from tests for the transformed data requested for example output:
-- [github-get-org-repo-collaborators-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+- [`github-get-org-repo-collaborators-<MULTIPLE_VERSIONS>`](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
 
 Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
 
@@ -267,7 +267,7 @@ including the transformed results under an added key `transformed`. In addition 
 For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgRepoContributors
 
 Please see the various permutations from tests for the transformed data requested for example output:
-- [github-get-org-repo-contributors-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+- [`github-get-org-repo-contributors-<MULTIPLE_VERSIONS>`](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
 
 Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
 
@@ -320,7 +320,7 @@ including the transformed results under an added key `transformed`. In addition 
 For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgs
 
 Please see the various permutations from tests for the transformed data requested for example output:
-- [github-get-orgs-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+- [`github-get-orgs-<MULTIPLE_VERSIONS>`](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
 
 Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
 
@@ -348,7 +348,7 @@ including the transformed results under an added key `transformed`. In addition 
 For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOrgTeams
 
 Please see the various permutations from tests for the transformed data requested for example output:
-- [github-get-org-teams-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+- [`github-get-org-teams-<MULTIPLE_VERSIONS>`](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
 
 Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
 
@@ -391,7 +391,7 @@ including the transformed results under an added key `transformed`. In addition 
 For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOwnerOrgs
 
 Please see the various permutations from tests for the transformed data requested for example output:
-- [github-get-owner-orgs-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+- [`github-get-owner-orgs-<MULTIPLE_VERSIONS>`](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
 
 Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
 
@@ -406,7 +406,7 @@ including the transformed results under an added key `transformed`. In addition 
 For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOwnerRateLimits
 
 Please see the various permutations from tests for the transformed data requested for example output:
-- [github-get-owners-rate-limit-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+- [`github-get-owners-rate-limit-<MULTIPLE_VERSIONS>`](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
 
 Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
 
@@ -421,7 +421,7 @@ including the transformed results under an added key `transformed`. In addition 
 For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getOwners
 
 Please see the various permutations from tests for the transformed data requested for example output:
-- [github-get-owners-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+- [`github-get-owners-<MULTIPLE_VERSIONS>`](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
 
 Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
 
@@ -449,6 +449,6 @@ including the transformed results under an added key `transformed`. In addition 
 For additional GitHubInspectOrgs options see: https://www.npmjs.com/package/typhonjs-github-inspect-orgs#getUserFromCredential
 
 Please see the various permutations from tests for the transformed data requested for example output:
-- [github-get-user-from-credential-<MULTIPLE_VERSIONS>](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
+- [`github-get-user-from-credential-<MULTIPLE_VERSIONS>`](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/tree/master/test/fixture)
 
 Returns `Promise` with an object hash containing `normalized`, `raw` and `transformed` entries.
