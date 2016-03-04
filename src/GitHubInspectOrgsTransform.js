@@ -2,8 +2,6 @@
 
 import TransformControl from './transform/TransformControl.js';
 
-import gulptasks        from './gulp/gulptasks.js';
-
 /**
  * GitHubInspectOrgsTransform - Provides various transform functions to convert the normalized data returned by all
  * GitHubInspectOrgs queries from
@@ -39,33 +37,8 @@ export default class GitHubInspectOrgsTransform
     * optional:
     * (object)    transforms - A hash with user supplied transforms to add to TransformControl.
     * ```
-    *
-    * @param {object}   optionsGulp - Optional parameters for Gulp integration:
-    * ```
-    * required:
-    * (Gulp)      gulp - An instance of Gulp which will load tasks based on the functions found in InspectList
-    *                    and by default outputs to the console; default: (none / no Gulp tasks loaded).
-    *
-    * optional:
-    * (string)    credential - A GitHub public access token that is used for user oriented Gulp tasks.
-    *
-    * (function)  pipeFunction - A function that is used any defined Gulp tasks when invoking `GitHubInspectOrgs` query
-    *                            functions; default (console.log).
-    *
-    * (boolean)   skipNonCredentialTasks - If true then skip all tasks that don't require credentials.
-    *
-    * (Array<String>)   categories - Required list of stats categories to query. May include:
-    *    'all': A wildcard that includes all categories defined below.
-    *    'codeFrequency': Get the number of additions and deletions per week.
-    *    'commitActivity': Get the last year of commit activity data.
-    *    'contributors': Get contributors list with additions, deletions & commit counts.
-    *    'participation': Get the weekly commit count for the repository owner & everyone else.
-    *    'punchCard': Get the number of commits per hour in each day.
-    *    'stargazers': Get list GitHub users who starred repos.
-    *    'watchers': Get list of GitHub users who are watching repos.
-    * ```
     */
-   constructor(githubInspect, options = {}, optionsGulp = {})
+   constructor(githubInspect, options = {})
    {
       if (typeof githubInspect !== 'object')
       {
@@ -92,9 +65,6 @@ export default class GitHubInspectOrgsTransform
        * @private
        */
       this._transformControl = new TransformControl(options);
-
-      // If a Gulp instance is supplied then load the associated Gulp tasks.
-      if (optionsGulp.gulp) { gulptasks(this, optionsGulp); }
    }
 
    /**
