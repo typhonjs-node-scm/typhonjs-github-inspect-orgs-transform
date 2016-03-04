@@ -18,10 +18,9 @@ export default class TransformControl
     *
     * @param {object}   options - Optional parameters:
     * ```
-    * required:
+    * optional:
     * (string) transformType - The current transform type.
     *
-    * optional:
     * (object) transforms - A hash with user supplied transforms to add to TransformControl.
     * ```
     */
@@ -41,18 +40,13 @@ export default class TransformControl
          text: transformText
       };
 
-      if (typeof options.transformType !== 'string')
-      {
-         throw new TypeError(`ctor error: 'options.transformType' is not a 'string'.`);
-      }
-
       /**
        * Stores the current transform type.
        *
        * @type {string}
        * @private
        */
-      this._transformType = options.transformType;
+      this._transformType = typeof options.transformType === 'string' ? options.transformType : 'text';
 
       // Add any user supplied transforms.
       if (typeof options.transforms === 'object')
@@ -114,7 +108,13 @@ export default class TransformControl
     * Transforms the given data by the current tranform type.
     *
     * @param {object}   data - The normalized data output from `GitHubInspectOrgs`.
+    *
     * @param {object}   options - Optional parameters passed to transform function.
+    * ```
+    * (boolean)   description - Add additional description info for all entries where available; default (false).
+    *
+    * (string)    transformType - Overrides TransformControl default transformType; default (_transformType).
+    * ```
     *
     * @returns {*}
     */
@@ -130,6 +130,18 @@ export default class TransformControl
          throw new TypeError(`transform error: 'options' is not a 'object'.`);
       }
 
-      return this._transforms[this._transformType](data, options);
+      if (typeof options.transformType !== 'undefined' && typeof options.transformType !== 'string')
+      {
+         throw new TypeError(`transform error: 'options.transformType' is not a 'string'.`);
+      }
+
+      const transformType = typeof options.transformType === 'string' ? options.transformType : this._transformType;
+
+      if (typeof this._transforms[transformType] === 'undefined')
+      {
+         throw new Error(`transform error: 'transformType' is an invalid transform type.`);
+      }
+
+      return this._transforms[transformType](data, options);
    }
 }

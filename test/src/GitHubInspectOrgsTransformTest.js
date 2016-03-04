@@ -21,8 +21,8 @@ import TransformControl             from '../../src/transform/TransformControl.j
  *
  * `s_FILE_DATA` - defines the 8 major permutations; 4 for each transform with and without description data generated.
  *
- * Note that the repo / statistics queries are skipped as the generated data is to complex to analyze. Also since
- * none of the transforms output repo file requests these are not tested.
+ * Note that the repo / statistics queries are skipped as the generated data is too complex to analyze. Also since
+ * none of the transforms output repo file requests these are also not tested.
  *
  * @test {onHandleCode}
  */
