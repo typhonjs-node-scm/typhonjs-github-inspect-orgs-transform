@@ -24,6 +24,7 @@
     "gulp": "^3.9.1",
     "typhonjs-config-eslint": "^0.3.0",
     "typhonjs-core-gulptasks": "^0.5.0",
+    "typhonjs-github-orgs-gulptasks": "^0.0.5",
     "typhonjs-npm-build-test": "^0.0.9"
   },
   "scripts": {
