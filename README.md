@@ -60,20 +60,21 @@ Please review [./test/fixture](https://github.com/typhonjs-node-scm/typhonjs-git
 
 GitHubInspectOrgsTransform method summary:
 
-- [getCollaborators](#getCollaborators) - Returns all collaborators across all organizations.
-- [getContributors](#getContributors) - Returns all contributors across all organizations.
-- [getMembers](#getMembers) - Returns all organization members across all organizations.
-- [getOrgMembers](#getOrgMembers) - Returns all members by organization across all organizations.
-- [getOrgRepos](#getOrgRepos) - Returns all repos by organization across all organizations.
-- [getOrgRepoCollaborators](#getOrgRepoCollaborators) - Returns all collaborators by repo by organization across all organizations.
-- [getOrgRepoContributors](#getOrgRepoContributors) - Returns all contributors by repo by organization across all organizations.
-- [getOrgRepoStats](#getOrgRepoStats) - Returns GitHub statistics by repo by organization across all organizations.
-- [getOrgs](#getOrgs) - Returns all organizations.
-- [getOrgTeams](#getOrgTeams) - Returns all teams by organization across all organizations.
-- [getOwnerOrgs](#getOwnerOrgs) - Returns all organizations by organization owner.
-- [getOwnerRateLimits](#getOwnerRateLimits) - Returns the current rate limits for all organization owners.
-- [getOwners](#getOwners) - Returns all organization owners.
-- [getUserFromCredential](#getUserFromCredential) - Returns the GitHub user who owns the provided credential.
+- [getCollaborators](#getCollaborators) - Transforms all collaborators across all organizations.
+- [getContributors](#getContributors) - Transforms all contributors across all organizations.
+- [getMembers](#getMembers) - Transforms all organization members across all organizations.
+- [getOrgMembers](#getOrgMembers) - Transforms all members by organization across all organizations.
+- [getOrgRepos](#getOrgRepos) - Transforms all repos by organization across all organizations.
+- [getOrgRepoCollaborators](#getOrgRepoCollaborators) - Transforms all collaborators by repo by organization across all organizations.
+- [getOrgRepoContributors](#getOrgRepoContributors) - Transforms all contributors by repo by organization across all organizations.
+- [getOrgRepoStats](#getOrgRepoStats) - Transforms GitHub statistics by repo by organization across all organizations.
+- [getOrgs](#getOrgs) - Transforms all organizations.
+- [getOrgTeams](#getOrgTeams) - Transforms all teams by organization across all organizations.
+- [getOrgTeamMembers](#getOrgTeamMembers) - Transforms all members by team by organization across all organizations.
+- [getOwnerOrgs](#getOwnerOrgs) - Transforms all organizations by organization owner.
+- [getOwnerRateLimits](#getOwnerRateLimits) - Transforms the current rate limits for all organization owners.
+- [getOwners](#getOwners) - Transforms all organization owners.
+- [getUserFromCredential](#getUserFromCredential) - Transforms the GitHub user who owns the provided credential.
 
 -----------
 <a name="getCollaborators"></a>
