@@ -40,6 +40,11 @@ export default class TransformControl
          text: transformText
       };
 
+      if (typeof options.transformType !== 'undefined' && typeof options.transformType !== 'string')
+      {
+         throw new TypeError(`ctor error: 'options.transformType' is not a 'string'.`);
+      }
+
       /**
        * Stores the current transform type.
        *
@@ -91,12 +96,12 @@ export default class TransformControl
     */
    setTransformType(transformType)
    {
-      if (typeof this._transformType !== 'string')
+      if (typeof transformType !== 'string')
       {
          throw new TypeError(`setTransformType error: 'transformType' is not a 'string'.`);
       }
 
-      if (typeof this._transforms[this._transformType] === 'undefined')
+      if (typeof this._transforms[transformType] === 'undefined')
       {
          throw new Error(`setTransformType error: 'transformType' is an invalid transform type.`);
       }

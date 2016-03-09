@@ -6,4 +6,4 @@ token.user
 coverage
 dist
 docs
-node_modules
+node_modules/
