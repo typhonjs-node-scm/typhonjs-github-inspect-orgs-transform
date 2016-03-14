@@ -1,6 +1,6 @@
 {
   "name": "typhonjs-github-inspect-orgs-transform",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "homepage": "https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform/",
   "description": "A NPM module transforming compound GitHub queries for many-repo projects from typhonjs-github-inspect-orgs to HTML, JSON, Markdown or text.",
   "license": "MPL-2.0",
@@ -50,7 +50,7 @@
     "dist",
     "src",
     "AUTHORS.md",
-    "esdoc.json"
+    ".esdocrc"
   ],
   "directories": {},
   "bugs": {
