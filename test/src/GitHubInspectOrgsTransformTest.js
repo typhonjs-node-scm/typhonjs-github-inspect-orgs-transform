@@ -42,14 +42,14 @@ describe('GitHubInspectOrgsTransform', () =>
    if (typeof ownerCredential === 'undefined')
    {
       try { ownerCredential = fs.readFileSync('./token.owner', 'utf-8'); }
-      catch(err) { /* ... */ }
+      catch (err) { /* ... */ }
    }
 
    // If user userCredential is still undefined attempt to load from a local file `./user.token`.
    if (typeof userCredential === 'undefined')
    {
       try { userCredential = fs.readFileSync('./token.user', 'utf-8'); }
-      catch(err) { /* ... */ }
+      catch (err) { /* ... */ }
    }
 
    // Fail now if we don't have an owner token.

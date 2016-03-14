@@ -42,8 +42,11 @@ const s_TRANSFORM = (category, entry, depth, options) =>
    {
       case 0:
          return s_TRANSFORM_FIRST_PASS(category, entry, depth, options);
+
       case 1:
          return s_TRANSFORM_SECOND_PASS(category, entry, depth, options);
+
+      /* istanbul ignore next */
       default:
          return '';
    }
@@ -93,7 +96,7 @@ const s_TRANSFORM_FIRST_PASS = (category, entry, depth, options = {}) =>
 
    let resultString = prefix;
 
-   switch(category)
+   switch (category)
    {
       case 'collaborators':
       case 'contributors':

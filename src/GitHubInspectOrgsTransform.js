@@ -80,11 +80,13 @@ export default class GitHubInspectOrgsTransform
     */
    constructor(githubInspect, options = {})
    {
+      /* istanbul ignore if */
       if (typeof githubInspect !== 'object')
       {
          throw new TypeError(`initialize error: 'options.githubInspect' is not an 'object'.`);
       }
 
+      /* istanbul ignore if */
       if (typeof options !== 'object') { throw new TypeError(`initialize error: 'options' is not an 'object'.`); }
 
       /**
@@ -127,13 +129,16 @@ export default class GitHubInspectOrgsTransform
     */
    getCollaborators(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object') { throw new TypeError(`getCollaborators error: 'options' is not an 'object'.`); }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getCollaborators error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getCollaborators error: 'options.pipeFunction' is not a 'function'.`);
@@ -182,13 +187,16 @@ export default class GitHubInspectOrgsTransform
     */
    getContributors(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object') { throw new TypeError(`getContributors error: 'options' is not an 'object'.`); }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getContributors error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getContributors error: 'options.pipeFunction' is not a 'function'.`);
@@ -237,13 +245,16 @@ export default class GitHubInspectOrgsTransform
     */
    getMembers(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object') { throw new TypeError(`getMembers error: 'options' is not an 'object'.`); }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getMembers error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getMembers error: 'options.pipeFunction' is not a 'function'.`);
@@ -292,13 +303,16 @@ export default class GitHubInspectOrgsTransform
     */
    getOrgMembers(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object') { throw new TypeError(`getOrgMembers error: 'options' is not an 'object'.`); }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getOrgMembers error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getOrgMembers error: 'options.pipeFunction' is not a 'function'.`);
@@ -347,13 +361,16 @@ export default class GitHubInspectOrgsTransform
     */
    getOrgRepos(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object') { throw new TypeError(`getOrgRepos error: 'options' is not an 'object'.`); }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getOrgRepos error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getOrgRepos error: 'options.pipeFunction' is not a 'function'.`);
@@ -402,16 +419,19 @@ export default class GitHubInspectOrgsTransform
     */
    getOrgRepoCollaborators(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object')
       {
          throw new TypeError(`getOrgRepoCollaborators error: 'options' is not an 'object'.`);
       }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getOrgRepoCollaborators error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getOrgRepoCollaborators error: 'options.pipeFunction' is not a 'function'.`);
@@ -460,16 +480,19 @@ export default class GitHubInspectOrgsTransform
     */
    getOrgRepoContributors(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object')
       {
          throw new TypeError(`getOrgRepoContributors error: 'options' is not an 'object'.`);
       }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getOrgRepoContributors error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getOrgRepoContributors error: 'options.pipeFunction' is not a 'function'.`);
@@ -518,16 +541,19 @@ export default class GitHubInspectOrgsTransform
     */
    getOrgRepoStats(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object')
       {
          throw new TypeError(`getOrgRepoStats error: options is not an 'object'.`);
       }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getOrgRepoStats error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getOrgRepoStats error: 'options.pipeFunction' is not a 'function'.`);
@@ -576,13 +602,16 @@ export default class GitHubInspectOrgsTransform
     */
    getOrgTeams(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object') { throw new TypeError(`getOrgTeams error: 'options' is not an 'object'.`); }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getOrgTeams error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getOrgTeams error: 'options.pipeFunction' is not a 'function'.`);
@@ -631,16 +660,19 @@ export default class GitHubInspectOrgsTransform
     */
    getOrgTeamMembers(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object')
       {
          throw new TypeError(`getOrgTeamMembers error: 'options' is not an 'object'.`);
       }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getOrgTeamMembers error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getOrgTeamMembers error: 'options.pipeFunction' is not a 'function'.`);
@@ -689,13 +721,16 @@ export default class GitHubInspectOrgsTransform
     */
    getOrgs(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object') { throw new TypeError(`getOrgs error: 'options' is not an 'object'.`); }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getOrgs error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getOrgs error: 'options.pipeFunction' is not a 'function'.`);
@@ -740,13 +775,16 @@ export default class GitHubInspectOrgsTransform
     */
    getOwnerOrgs(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object') { throw new TypeError(`getOwnerOrgs error: 'options' is not an 'object'.`); }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getOwnerOrgs error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getOwnerOrgs error: 'options.pipeFunction' is not a 'function'.`);
@@ -791,16 +829,19 @@ export default class GitHubInspectOrgsTransform
     */
    getOwnerRateLimits(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object')
       {
          throw new TypeError(`getOwnerRateLimits error: 'options' is not an 'object'.`);
       }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getOwnerRateLimits error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getOwnerRateLimits error: 'options.pipeFunction' is not a 'function'.`);
@@ -845,13 +886,16 @@ export default class GitHubInspectOrgsTransform
     */
    getOwners(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object') { throw new TypeError(`getOwners error: 'options' is not an 'object'.`); }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getOwners error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getOwners error: 'options.pipeFunction' is not a 'function'.`);
@@ -910,16 +954,19 @@ export default class GitHubInspectOrgsTransform
     */
    getUserFromCredential(options = {})
    {
+      /* istanbul ignore if */
       if (typeof options !== 'object')
       {
          throw new TypeError(`getUserFromCredential error: 'options' is not an 'object'.`);
       }
 
+      /* istanbul ignore if */
       if (options.description && typeof options.description !== 'boolean')
       {
          throw new TypeError(`getUserFromCredential error: 'options.description' is not a 'boolean'.`);
       }
 
+      /* istanbul ignore if */
       if (options.pipeFunction && typeof options.pipeFunction !== 'function')
       {
          throw new TypeError(`getUserFromCredential error: 'options.pipeFunction' is not a 'function'.`);

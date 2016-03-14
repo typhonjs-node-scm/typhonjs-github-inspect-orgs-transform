@@ -57,6 +57,7 @@ const s_TRANSFORM = (category, entry, depth, options) =>
          tail = '\n';
          tail += lastEntry && maxDepth ? '\n' : '';
          break;
+
       case 2:
          prefix = `${indent(2)}* `;
          tail = '\n';
@@ -64,7 +65,7 @@ const s_TRANSFORM = (category, entry, depth, options) =>
          break;
    }
 
-   switch(category)
+   switch (category)
    {
       case 'collaborators':
       case 'contributors':

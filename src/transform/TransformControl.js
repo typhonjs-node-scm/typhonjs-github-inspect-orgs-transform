@@ -40,6 +40,7 @@ export default class TransformControl
          text: transformText
       };
 
+      /* istanbul ignore if */
       if (typeof options.transformType !== 'undefined' && typeof options.transformType !== 'string')
       {
          throw new TypeError(`ctor error: 'options.transformType' is not a 'string'.`);
@@ -58,11 +59,13 @@ export default class TransformControl
       {
          for (const key in options.transforms)
          {
+            /* istanbul ignore if */
             if (typeof key !== 'string')
             {
                throw new TypeError(`ctor error: 'options.transforms[key]' is not a 'string'.`);
             }
 
+            /* istanbul ignore if */
             if (typeof options.transforms[key] !== 'function')
             {
                throw new TypeError(`ctor error: 'options.transforms[value]' is not a 'function'.`);
@@ -73,6 +76,7 @@ export default class TransformControl
       }
 
       // Validate the current transform type.
+      /* istanbul ignore if */
       if (typeof this._transforms[this._transformType] === 'undefined')
       {
          throw new Error(`ctor error: 'options.transformType' is an invalid transform type.`);
@@ -96,11 +100,13 @@ export default class TransformControl
     */
    setTransformType(transformType)
    {
+      /* istanbul ignore if */
       if (typeof transformType !== 'string')
       {
          throw new TypeError(`setTransformType error: 'transformType' is not a 'string'.`);
       }
 
+      /* istanbul ignore if */
       if (typeof this._transforms[transformType] === 'undefined')
       {
          throw new Error(`setTransformType error: 'transformType' is an invalid transform type.`);
@@ -125,16 +131,19 @@ export default class TransformControl
     */
    transform(data, options = {})
    {
+      /* istanbul ignore if */
       if (typeof data !== 'object')
       {
          throw new TypeError(`transform error: 'data' is not a 'object'.`);
       }
 
+      /* istanbul ignore if */
       if (typeof options !== 'object')
       {
          throw new TypeError(`transform error: 'options' is not a 'object'.`);
       }
 
+      /* istanbul ignore if */
       if (typeof options.transformType !== 'undefined' && typeof options.transformType !== 'string')
       {
          throw new TypeError(`transform error: 'options.transformType' is not a 'string'.`);
@@ -142,6 +151,7 @@ export default class TransformControl
 
       const transformType = typeof options.transformType === 'string' ? options.transformType : this._transformType;
 
+      /* istanbul ignore if */
       if (typeof this._transforms[transformType] === 'undefined')
       {
          throw new Error(`transform error: 'transformType' is an invalid transform type.`);

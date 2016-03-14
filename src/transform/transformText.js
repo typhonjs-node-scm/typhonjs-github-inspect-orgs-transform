@@ -50,7 +50,7 @@ const s_TRANSFORM = (category, entry, depth, options) =>
 
    let resultString = prefix;
 
-   switch(category)
+   switch (category)
    {
       case 'collaborators':
       case 'contributors':

@@ -14,7 +14,6 @@ import gitGulpTasks  from 'typhonjs-github-orgs-gulptasks';
 gulpTasks(gulp,
 {
    rootPath: __dirname,
-   importTasks: ['esdoc', 'eslint', 'npm'],
    srcGlob: ['./src/**/*.js', './test/src/**/*.js']
 });
 
@@ -29,14 +28,14 @@ let userCredential = process.env.GITHUB_USER_TOKEN;
 if (typeof ownerCredential === 'undefined')
 {
    try { ownerCredential = fs.readFileSync('./token.owner', 'utf-8'); }
-   catch(err) { /* ... */ }
+   catch (err) { /* ... */ }
 }
 
 // If user userCredential is still undefined attempt to load from a local file `./user.token`.
 if (typeof userCredential === 'undefined')
 {
    try { userCredential = fs.readFileSync('./token.user', 'utf-8'); }
-   catch(err) { /* ... */ }
+   catch (err) { /* ... */ }
 }
 
 // Fail now if we don't have an owner token.
