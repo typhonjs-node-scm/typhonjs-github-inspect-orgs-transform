@@ -153,6 +153,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -211,6 +212,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -269,6 +271,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -327,6 +330,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -385,6 +389,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -446,6 +451,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -507,6 +513,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -568,6 +575,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -626,6 +634,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -687,6 +696,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -745,6 +755,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -799,6 +810,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -856,6 +868,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -910,6 +923,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.
@@ -981,6 +995,7 @@ export default class GitHubInspectOrgsTransform
          const result = this._transformControl.transform(data.normalized, options);
 
          // If a pipeFunction function is optionally supplied then pipe `result`.
+         /* istanbul ignore if */
          if (options.pipeFunction) { options.pipeFunction.call(null, result); }
 
          // Add transformed result under a `transformed` key with the original query data.

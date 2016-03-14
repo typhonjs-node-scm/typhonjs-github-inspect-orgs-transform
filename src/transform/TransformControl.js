@@ -55,6 +55,7 @@ export default class TransformControl
       this._transformType = typeof options.transformType === 'string' ? options.transformType : 'text';
 
       // Add any user supplied transforms.
+      /* istanbul ignore if */
       if (typeof options.transforms === 'object')
       {
          for (const key in options.transforms)
